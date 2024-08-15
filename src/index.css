@@ -1,0 +1,125 @@
+* {
+  font-family: 'Rubik Variable', sans-serif;
+  text-decoration: none !important;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-weight: 400;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --bg-zinc-700: #3f3f46;
+  --bg-zinc-600: #5f5f69;
+  --bg-gray-100: #f5f4f7;
+  --bg-yellow-300: #d3b20e;
+  --bg-blue-300: #884d00;
+  --bg-blue-400: #3182CE;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-gray-100) !important;
+}
+
+a {
+  transition: 0.3 ease-in-out !important;
+}
+
+button:hover {
+  filter: brightness(90%);
+  transition: 0.3 ease-in-out !important;
+}
+
+.profile:hover {
+  color: var(--bg-blue-400) !important;
+  transition: 0.3 ease-in-out !important;
+}
+
+
+.cursor {
+  cursor: pointer;
+}
+
+.remove:hover {
+  text-decoration: underline !important;
+}
+
+.scrollbody {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbody::-webkit-scrollbar {
+  display: none;
+}
+
+.cardBox {
+  transition: 0.3s ease-in;
+  min-width: 135px;
+}
+
+.productImg{
+  height: 280px;
+}
+
+.cardBox:hover,
+.homeBox:hover {
+  transition: 0.3s ease-in;
+  filter: brightness(90%);
+}
+
+.btns {
+  color: black !important;
+  background-color: var(--bg-blue-300) !important;
+}
+
+.btns:hover {
+  background-color: var(--bg-yellow-300) !important;
+  transition: 0.3s ease-in-out;
+  border: none;
+}
+
+.fade {
+  transition: 0.3s ease-in-out;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-skeleton {
+  border-radius: 10px !important;
+}
+
+@media (min-width: 375px) {
+  .cardBox {
+    min-width: 160px;
+  }
+}
+
+@media (min-width: 430px) {
+  .cardBox {
+    min-width: 165px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cardBox {
+    min-width: 170px;
+  }
+
+.productImg {
+  height: 380px;
+}
+}
